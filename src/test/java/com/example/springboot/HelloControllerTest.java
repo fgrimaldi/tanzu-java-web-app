@@ -21,7 +21,7 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Cheers from DesoTech Java Web App + Tanzu 2022!", controller.index());
+        assertEquals("Cheers from DesoTech Java Web App + Tanzu 2022! Version 2.0", controller.index());
 
         mockMvc
             .perform(get("/"))
