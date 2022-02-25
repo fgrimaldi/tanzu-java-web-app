@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Cheers from DesoTech Java Web App + Tanzu 2022! Version 2.0", controller.index());
+        assertEquals("Cheers from DesoTech Java Web App + Tanzu 2022! Version 3.0", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Cheers from DesoTech Java Web App + Tanzu 2022! Version 2.0"));
+            .andExpect(content().string("Cheers from DesoTech Java Web App + Tanzu 2022! Version 3.0"));
     }
 }
